@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2414650097808212727}
   - component: {fileID: 510540645515734591}
   - component: {fileID: 3319605250154961772}
+  - component: {fileID: 1593610793610671317}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Player
@@ -117,7 +118,7 @@ Rigidbody:
   serializedVersion: 4
   m_Mass: 0.5
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0.08
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -148,3 +149,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 500
   maxAngularVelocity: 15
+--- !u!114 &1593610793610671317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7964664442827587384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1c4a4befb0a4041a87cb103f5038a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boostForce: 2
