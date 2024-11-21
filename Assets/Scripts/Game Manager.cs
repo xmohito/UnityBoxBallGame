@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        Cursor.visible = false;
         Time.timeScale = 1f;
         audioSource = GetComponent<AudioSource>();
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
