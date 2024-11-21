@@ -27,6 +27,7 @@ public class MoveBox : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
         {
+            Debug.Log(hit.transform.gameObject.name);
             if (hit.transform.gameObject.CompareTag("Floor") || hit.transform.gameObject.CompareTag("Player"))
             {
                 Move();

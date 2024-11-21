@@ -26,6 +26,7 @@ public class BallBoost : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(rb.velocity.normalized);
         TextVisible();
 
         if (Input.GetKeyDown(KeyCode.Space) && boostReady && rb.velocity != Vector3.zero)

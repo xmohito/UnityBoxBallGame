@@ -13,7 +13,6 @@ public class SoundManager : MonoBehaviour
     public AudioClip bonusAudio;
     public AudioClip winAudio;
     public AudioClip loseAudio;
-    public AudioClip hitAudio; 
 
 
     AudioSource audioSource;

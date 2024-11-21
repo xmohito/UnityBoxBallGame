@@ -65,19 +65,10 @@ public class GameManager : MonoBehaviour
 
     public void NextLevel()
     {
-        int activeScene = SceneManager.GetActiveScene().buildIndex + 1;
-        
-        if (PlayerPrefs.GetInt("level", 1) < activeScene)
-        {
-            PlayerPrefs.SetInt("level", activeScene);
-        }
-        if (SceneManager.sceneCountInBuildSettings > activeScene + 1)
-        {
-            SceneManager.LoadScene(activeScene);
-        }      
+        soundManager.PlaySound(SoundManager.Sounds.Win);
+        if (SceneManager.sceneCountInBuildSettings > SceneManager.GetActiveScene().buildIndex + 1)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
         else
-        {
-             SceneManager.LoadScene(0);
-        }
+            SceneManager.LoadScene(0);
     }
 }
