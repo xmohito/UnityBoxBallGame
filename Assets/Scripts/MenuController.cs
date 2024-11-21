@@ -9,11 +9,12 @@ public class MenuController : MonoBehaviour
 
     public void LoadLevel(int index)
     {
+        Application.Quit();
         SceneManager.LoadScene(index);
     }
 
     public void Exit()
-    {
+    {   
         Application.Quit();
     }
 }
