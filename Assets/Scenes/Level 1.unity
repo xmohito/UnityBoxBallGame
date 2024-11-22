@@ -22101,7 +22101,7 @@ MonoBehaviour:
     type: 3}
   startPosition: {fileID: 1569573243}
   timeText: {fileID: 1489654423}
-  time: 60
+  time: 10
   slowTimeSeconds: 2
   slowTimeAmount: 0.7
 --- !u!4 &1820847936
